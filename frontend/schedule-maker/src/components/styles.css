@@ -1,10 +1,10 @@
 /* Main Colour theme */
 :root {
-    --main-color: #9b2b2b;
-    --secondary-color: #f5f5f5;
-    --tertiary-color: #f5f5f5;
-    --quaternary-color: #f5f5f5;
-    --quinary-color: #f5f5f5;
+    --main-color: #7f2970;
+    --secondary-color: #db7c41;
+    --tertiary-color: #23a93a;
+    --quaternary-color: #cd5fc6;
+    --quinary-color: #ae2424;
 }
 
 /* Text Constants */
@@ -19,19 +19,15 @@
 }
 
 .table-cell {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     text-align: center;
+
     border: 1px solid black;
 }
 
-.navbar {
-    width: 200px;  
-    background-color: white;
-    padding: 20px;
-}
 
-.main {
-    flex-grow: 1;
-    padding: 20px;
+.logo {
+    height: 50px;
+    margin-right: 20px;
 }

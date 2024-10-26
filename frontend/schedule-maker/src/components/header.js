@@ -1,21 +1,19 @@
 import React, { useEffect, useState } from 'react';
 
 function Header() {
-
-
   return (
     <div style={styles.header}>
-      <h1>Volunteer Intake Form</h1>
-
-        <div style={styles.subheader}>
-            <p>Representing over 30 cultural and lingusitic groups, the MCHB team of 140 Health Brokers (community health workers) have devleivered responsive programs and services to Edmonton's ethoncultural communities for more than 25 years. Supporting the social fabric of our city, the MCHB has achieved significant outcomes reflected in its stellar reputation, progressive track record and position of community leadership
-            </p>
-            <p>This survey will allow us to access your backgrounds, skill sets and find a role that would best suit your needs. Once enrolled, the possibility to float between different roles would be considered if you want to diversify and grow
-            </p>
-            <p>For any questions, please contact Arlyn at arlyn@mchb.org (or whoever we chose to have the email for)</p>
-
-        </div>
-
+      <div style={styles.headerContent}>
+        <img src={require('./MCHB logo.png')} alt="MCHB Logo" style={styles.logo} />
+        <h1>Volunteer Intake Form</h1>
+      </div>
+      <div style={styles.subheader}>
+        <p>The MCHB team has suppored Edmonton's diverse communities for 25+ years. 
+        </p>
+        <p>
+          For any questions, please contact us at volunteer@mchb.org
+        </p>
+      </div>
     </div>
   );
 }
@@ -23,20 +21,25 @@ function Header() {
 export default Header;
 
 const styles = {
-    header: {
-        backgroundColor: 'white',
-        textAlign: 'center',
-        fontSize: '30px',
-        color: 'black',
-    },
-
-    subheader: {
-        backgroundColor: ' light green',
-        textAlign: 'left',
-        fontSize: '15px',
-        color: 'black',
-        padding: '40px',
-        borderRadius: '10px',
-    }
-
-}
+  header: {
+    padding: '10px',
+    backgroundColor: '#f8f9fa', // Example background color
+  },
+  headerContent: {
+    display: 'flex',
+    alignItems: 'center',
+    marginBottom: '20px',
+    padding: '10px',
+  },
+  logo: {
+    height: '100px',
+    marginRight: '20px',
+  },
+  subheader: {
+    marginTop: '20px',
+    backgroundColor: '#23a93a', //     --tertiary-color: #23a93a;
+    padding: '10px',
+    borderRadius: '10px',
+    color: 'white',
+  },
+};

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import './styles.css';
 
-function Availability() {
+function Schedule() {
     // Schedule 
     const hours = (new Array(25)).fill(1).map((_, i) => i);
     const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -36,6 +36,10 @@ function Availability() {
         }
     };
 
+    const clearAvailability = () => {
+        setAvailability({});
+    };
+
     return (
         <div onMouseUp={handleMouseUp}>
             <table>
@@ -66,8 +70,10 @@ function Availability() {
                     ))}
                 </tbody>
             </table>
+            <button onClick={clearAvailability}>Clear Availability</button>
+
         </div>
     );
 }
 
-export default Availability;
+export default Schedule;
