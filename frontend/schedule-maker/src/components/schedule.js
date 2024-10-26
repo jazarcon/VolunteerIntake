@@ -70,10 +70,21 @@ function Schedule() {
                     ))}
                 </tbody>
             </table>
-            <button onClick={clearAvailability}>Clear Availability</button>
+            <div style={ styles.container }>
+                <button onClick={clearAvailability}>Clear Availability</button>
+            </div>
 
         </div>
     );
 }
 
 export default Schedule;
+
+const styles = {
+    container: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-end',
+        marginTop: '10px',
+    },
+};
